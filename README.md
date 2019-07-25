@@ -2,7 +2,9 @@
 
 PyTorch implementation of ["InstaGAN: Instance-aware Image-to-Image Translation"](https://openreview.net/forum?id=ryxwJhC9YX) (ICLR 2019).
 The implementation is based on the [official CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) code.
-Our major contributions are in `./models/insta_gan_model.py` and `./models/networks.py`.
+We see a translation problem from a bigger object (thus bigger mask) to a smaller object in the form of an artifact. 
+We try to solve this by modifing how the error function is calculated as shown in `./models/insta_gan_model.py` and `./models/networks.py`. 
+Co-Author: Adam Berk (a.berk@sms.ed.ac.uk) and James Porter
 
 <img src='imgs/intro.png'>
 
